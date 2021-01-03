@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nyw-Oa-Gec">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Leauge View Controller-->
+        <scene sceneID="5ks-UH-QXv">
+            <objects>
+                <viewController storyboardIdentifier="LeaugeViewController" id="nyw-Oa-Gec" customClass="LeaugeViewController" customModule="VIPER_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cIc-WU-Z0A">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PMA-d0-7rs">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LeaugeTableViewCell" id="x4k-af-rpB" customClass="LeaugeTableViewCell" customModule="VIPER_Demo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="88.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x4k-af-rpB" id="WRB-yN-H3U">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="88.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4AT-qj-VZN">
+                                                    <rect key="frame" x="28" y="19" width="333.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VcK-we-eXD">
+                                                    <rect key="frame" x="28" y="48" width="42" height="21.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="255" verticalHuggingPriority="251" text="sport" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8c8-rF-O0K">
+                                                    <rect key="frame" x="361.5" y="19" width="40.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.02607233367" green="0.4565553617" blue="0.072416623299999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="VcK-we-eXD" secondAttribute="bottom" constant="8" id="CbE-Wz-5sQ"/>
+                                                <constraint firstItem="8c8-rF-O0K" firstAttribute="trailing" secondItem="WRB-yN-H3U" secondAttribute="trailingMargin" constant="8" id="ONf-4B-oiX"/>
+                                                <constraint firstItem="4AT-qj-VZN" firstAttribute="leading" secondItem="WRB-yN-H3U" secondAttribute="leadingMargin" constant="8" id="evF-Kt-Oml"/>
+                                                <constraint firstItem="8c8-rF-O0K" firstAttribute="leading" relation="lessThanOrEqual" secondItem="4AT-qj-VZN" secondAttribute="trailing" id="fDG-S7-Fgl"/>
+                                                <constraint firstItem="VcK-we-eXD" firstAttribute="leading" secondItem="4AT-qj-VZN" secondAttribute="leading" id="mGG-Ow-hs4"/>
+                                                <constraint firstItem="8c8-rF-O0K" firstAttribute="centerY" secondItem="4AT-qj-VZN" secondAttribute="centerY" id="oyZ-7h-h4K"/>
+                                                <constraint firstItem="VcK-we-eXD" firstAttribute="top" secondItem="4AT-qj-VZN" secondAttribute="bottom" constant="8" id="qJ6-XD-Dhb"/>
+                                                <constraint firstItem="4AT-qj-VZN" firstAttribute="top" secondItem="WRB-yN-H3U" secondAttribute="topMargin" constant="8" id="z3e-Hv-7iC"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="leaugeAltName" destination="VcK-we-eXD" id="5YO-Lm-eUX"/>
+                                            <outlet property="leaugeName" destination="4AT-qj-VZN" id="9Mf-gN-u1J"/>
+                                            <outlet property="leaugeSport" destination="8c8-rF-O0K" id="Btk-NZ-EXC"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="nyw-Oa-Gec" id="aMd-pJ-Trt"/>
+                                    <outlet property="delegate" destination="nyw-Oa-Gec" id="yaC-vL-bYI"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PMA-d0-7rs" firstAttribute="leading" secondItem="HaM-mt-PUe" secondAttribute="leading" id="C7S-jt-NN2"/>
+                            <constraint firstItem="HaM-mt-PUe" firstAttribute="trailing" secondItem="PMA-d0-7rs" secondAttribute="trailing" id="VmK-VL-9qE"/>
+                            <constraint firstItem="PMA-d0-7rs" firstAttribute="top" secondItem="HaM-mt-PUe" secondAttribute="top" id="Vv2-lg-02q"/>
+                            <constraint firstItem="HaM-mt-PUe" firstAttribute="bottom" secondItem="PMA-d0-7rs" secondAttribute="bottom" id="x3l-aA-J6T"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HaM-mt-PUe"/>
+                    </view>
+                    <connections>
+                        <outlet property="leaugeTableView" destination="PMA-d0-7rs" id="UCW-VA-UMp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8R0-nB-oUB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="153.62318840579712" y="127.90178571428571"/>
+        </scene>
+    </scenes>
+</document>
