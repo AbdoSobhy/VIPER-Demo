@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52C261EF25A33DC600AAC90A /* LeaugeDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C261EE25A33DC600AAC90A /* LeaugeDetails.storyboard */; };
+		52C261F125A3AF3700AAC90A /* LeaugeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C261F025A3AF3700AAC90A /* LeaugeDetailsViewController.swift */; };
+		52C261F325A3AFE700AAC90A /* LeaugeDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C261F225A3AFE700AAC90A /* LeaugeDetailsPresenter.swift */; };
+		52C261F625A3AFFF00AAC90A /* LeaugeDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C261F525A3AFFF00AAC90A /* LeaugeDetailsInteractor.swift */; };
+		52C261F825A3B00900AAC90A /* LeaugeDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C261F725A3B00900AAC90A /* LeaugeDetailsRouter.swift */; };
+		52C261FB25A3B02000AAC90A /* LeaugeDetailsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C261FA25A3B02000AAC90A /* LeaugeDetailsProtocols.swift */; };
 		52D0180125A21F0A000977DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0180025A21F0A000977DD /* AppDelegate.swift */; };
 		52D0180525A21F0A000977DD /* LeaugeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0180425A21F0A000977DD /* LeaugeViewController.swift */; };
 		52D0180A25A21F0C000977DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52D0180925A21F0C000977DD /* Assets.xcassets */; };
@@ -33,6 +39,12 @@
 		1CDC4E2D6EB70CF3C48C97F0 /* Pods-VIPER-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-Demo.release.xcconfig"; path = "Target Support Files/Pods-VIPER-Demo/Pods-VIPER-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		3AB5EC3641EE8FAB2526F0C0 /* Pods_VIPER_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPER_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F02D1FA48840AFB5312FE35 /* Pods-VIPER-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-Demo.debug.xcconfig"; path = "Target Support Files/Pods-VIPER-Demo/Pods-VIPER-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		52C261EE25A33DC600AAC90A /* LeaugeDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LeaugeDetails.storyboard; sourceTree = "<group>"; };
+		52C261F025A3AF3700AAC90A /* LeaugeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaugeDetailsViewController.swift; sourceTree = "<group>"; };
+		52C261F225A3AFE700AAC90A /* LeaugeDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaugeDetailsPresenter.swift; sourceTree = "<group>"; };
+		52C261F525A3AFFF00AAC90A /* LeaugeDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaugeDetailsInteractor.swift; sourceTree = "<group>"; };
+		52C261F725A3B00900AAC90A /* LeaugeDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaugeDetailsRouter.swift; sourceTree = "<group>"; };
+		52C261FA25A3B02000AAC90A /* LeaugeDetailsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaugeDetailsProtocols.swift; sourceTree = "<group>"; };
 		52D017FD25A21F0A000977DD /* VIPER-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPER-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D0180025A21F0A000977DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		52D0180425A21F0A000977DD /* LeaugeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaugeViewController.swift; sourceTree = "<group>"; };
@@ -189,6 +201,12 @@
 		52D0182725A2264E000977DD /* LeaugeDetails */ = {
 			isa = PBXGroup;
 			children = (
+				52C261EE25A33DC600AAC90A /* LeaugeDetails.storyboard */,
+				52C261F025A3AF3700AAC90A /* LeaugeDetailsViewController.swift */,
+				52C261F225A3AFE700AAC90A /* LeaugeDetailsPresenter.swift */,
+				52C261F525A3AFFF00AAC90A /* LeaugeDetailsInteractor.swift */,
+				52C261F725A3B00900AAC90A /* LeaugeDetailsRouter.swift */,
+				52C261FA25A3B02000AAC90A /* LeaugeDetailsProtocols.swift */,
 			);
 			path = LeaugeDetails;
 			sourceTree = "<group>";
@@ -278,6 +296,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C261EF25A33DC600AAC90A /* LeaugeDetails.storyboard in Resources */,
 				52D0182C25A226E6000977DD /* Leauge.storyboard in Resources */,
 				52D0181B25A2234E000977DD /* LaunchScreen.storyboard in Resources */,
 				52D0180A25A21F0C000977DD /* Assets.xcassets in Resources */,
@@ -340,14 +359,19 @@
 				52D0183325A22784000977DD /* LeaugeRouter.swift in Sources */,
 				52D0184225A24805000977DD /* GeneralError.swift in Sources */,
 				52D0184525A25366000977DD /* ViewController+Alert.swift in Sources */,
+				52C261F625A3AFFF00AAC90A /* LeaugeDetailsInteractor.swift in Sources */,
 				52D0182E25A2274D000977DD /* LeaugePresenter.swift in Sources */,
+				52C261F125A3AF3700AAC90A /* LeaugeDetailsViewController.swift in Sources */,
 				52D0181E25A224F0000977DD /* ApiRouter.swift in Sources */,
+				52C261F325A3AFE700AAC90A /* LeaugeDetailsPresenter.swift in Sources */,
 				52D0183825A227FC000977DD /* LeaugeTableViewCell.swift in Sources */,
 				52D0184125A24805000977DD /* ErrorHandling.swift in Sources */,
 				52D0182325A225CA000977DD /* LeagueDetails.swift in Sources */,
 				52D0184725A25373000977DD /* ActivityIndicator.swift in Sources */,
 				52D0182225A225CA000977DD /* League.swift in Sources */,
 				52D0180125A21F0A000977DD /* AppDelegate.swift in Sources */,
+				52C261F825A3B00900AAC90A /* LeaugeDetailsRouter.swift in Sources */,
+				52C261FB25A3B02000AAC90A /* LeaugeDetailsProtocols.swift in Sources */,
 				52D0183125A22766000977DD /* LeaugeInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

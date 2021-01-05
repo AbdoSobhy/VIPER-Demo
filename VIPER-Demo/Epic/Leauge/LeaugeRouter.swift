@@ -29,4 +29,11 @@ class LeaugeRouterImpl: LeaugeRouter {
         return UIStoryboard(name: "Leauge", bundle: nil)
     }
     
+    func navigateToDetailsScreen(from view: LeaugeView?, id: String){
+        let leagueDetailsViewController = LeaugeDetailsRouterImpl.createLeaugeDetailsModule(id: id)
+        if let viewController = view as? UIViewController {
+            viewController.present(leagueDetailsViewController, animated: true, completion: nil)
+        }
+    }
+    
 }

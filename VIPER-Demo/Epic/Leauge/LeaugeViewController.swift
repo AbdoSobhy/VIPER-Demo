@@ -20,7 +20,6 @@ class LeaugeViewController: UIViewController, LeaugeView {
         presenter?.viewDidLoad()
     }
 
-    
     func startAnimating() {
         self.showSpinner(onView: self.view)
     }
@@ -50,6 +49,9 @@ extension LeaugeViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter?.didSelectRowAt(indexPath: indexPath)
+    }
     
 }
 

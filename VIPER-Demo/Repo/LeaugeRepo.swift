@@ -8,11 +8,19 @@
 
 import Foundation
 
-protocol LeaugeRepo {
-    func getLeauges(completionHandeler: @escaping (Result<League,ErrorHandler>)->Void)
-}
 
-class LeaugeRepoImpl: LeaugeRepo {
+class LeaugeRepoImpl {
+    func getLeaugeDetails(id: String, completionHandeler: @escaping (Result<LeagueDetails, ErrorHandler>) -> Void) {
+        ApiRequest.apiCall(responseModel: LeagueDetails.self, request: .leaguesDetails(id: id)) { response in
+            switch response {
+            case .success(let leaugeDetails):
+                completionHandeler(.success(leaugeDetails))
+            case .failure(let error):
+                completionHandeler(.failure(error))
+            }
+        }
+    }
+    
     func getLeauges(completionHandeler: @escaping (Result<League, ErrorHandler>) -> Void) {
         ApiRequest.apiCall(responseModel: League.self, request: .getLeagues) { response in
             switch response {

@@ -19,7 +19,7 @@ enum ApiRouter: URLRequestConvertible {
         case .getLeagues:
             return URL(string: "https://www.thesportsdb.com/api/v1/json/1/all_leagues.php")!
         case .leaguesDetails:
-            return URL(string: "https://www.thesportsdb.com/api/v1/json/1/lookupleague.php")!
+            return URL(string: "https://www.thesportsdbb.com/api/v1/json/1/lookupleague.php")!
         }
     }
     

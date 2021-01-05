@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KKn-I1-z40">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Leauge Details View Controller-->
+        <scene sceneID="Atl-ma-4yf">
+            <objects>
+                <viewController storyboardIdentifier="LeaugeDetailsViewController" id="KKn-I1-z40" customClass="LeaugeDetailsViewController" customModule="VIPER_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FWM-Kj-mBc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPt-OL-aae">
+                                <rect key="frame" x="186" y="108" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KZA-Pm-wlp">
+                                <rect key="frame" x="8" y="145" width="398" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="f00-bF-Mbz"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="EPt-OL-aae" firstAttribute="top" secondItem="KP3-GZ-pjf" secondAttribute="top" constant="64" id="UgE-4M-VQS"/>
+                            <constraint firstItem="KP3-GZ-pjf" firstAttribute="trailing" secondItem="KZA-Pm-wlp" secondAttribute="trailing" constant="8" id="VBQ-OV-pYS"/>
+                            <constraint firstItem="KZA-Pm-wlp" firstAttribute="leading" secondItem="KP3-GZ-pjf" secondAttribute="leading" constant="8" id="dnG-V3-1fF"/>
+                            <constraint firstItem="EPt-OL-aae" firstAttribute="centerX" secondItem="FWM-Kj-mBc" secondAttribute="centerX" id="eym-8N-Wsd"/>
+                            <constraint firstItem="KZA-Pm-wlp" firstAttribute="top" secondItem="EPt-OL-aae" secondAttribute="bottom" constant="16" id="pRx-4j-lUD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KP3-GZ-pjf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GRW-fT-xTU"/>
+                    <connections>
+                        <outlet property="LeaugeName" destination="EPt-OL-aae" id="MIa-gK-JAp"/>
+                        <outlet property="leaugeDetails" destination="KZA-Pm-wlp" id="QCQ-wk-oZz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C3R-B1-nd0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="784.05797101449286" y="98.4375"/>
+        </scene>
+    </scenes>
+</document>

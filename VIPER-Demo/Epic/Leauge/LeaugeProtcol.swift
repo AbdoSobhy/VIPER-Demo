@@ -26,6 +26,7 @@ protocol LeaugePresenter: AnyObject {
     var numberOfRows: Int { get }
     func confugerCell(cell: LeaugeCell, indexPath: IndexPath)
     func viewDidLoad()
+    func didSelectRowAt(indexPath: IndexPath)
 }
 
 protocol LeaugeInteractorInput {
@@ -39,7 +40,7 @@ protocol LeaugeInteractorOutput {
 }
 
 protocol LeaugeRouter {
-    
+    func navigateToDetailsScreen(from view: LeaugeView?, id: String)
 }
 
 

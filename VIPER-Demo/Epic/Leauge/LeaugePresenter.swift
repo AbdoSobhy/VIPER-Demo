@@ -18,7 +18,7 @@ class LeaugePresenterImpl: LeaugePresenter, LeaugeInteractorOutput {
         leauge.count
     }
     
-
+    
     init(view: LeaugeView, interactor: LeaugeInteractorInput, router: LeaugeRouter) {
         self.view = view
         self.interactor = interactor
@@ -45,6 +45,12 @@ class LeaugePresenterImpl: LeaugePresenter, LeaugeInteractorOutput {
     func confugerCell(cell: LeaugeCell, indexPath: IndexPath) {
         let viewModel = LeaugeViewModel(leagues: self.leauge[indexPath.row])
         cell.configure(viewModel: viewModel)
+    }
+    
+    func didSelectRowAt(indexPath: IndexPath){
+        if let leaugeId = leauge[indexPath.row].idLeague {
+            router.navigateToDetailsScreen(from: view, id: leaugeId)
+        }
     }
     
 }
