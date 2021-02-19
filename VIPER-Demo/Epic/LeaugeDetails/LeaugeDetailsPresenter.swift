@@ -34,9 +34,9 @@ class LeaugeDetailsPresenterImpl: LeaugeDetailsPresenter ,LeaugeDetailsOutputInt
     
     func getLeaugeDetailsfailure(error: ErrorHandler) {
         view?.stopAnimating()
-        view?.showAlert(message: error.errorObject.message, completion: { _ in
+        router.showAlert(from: view , message: error.errorObject.message) { _ in
             self.view?.dismiss()
-            })
+        }
         
     }
 
