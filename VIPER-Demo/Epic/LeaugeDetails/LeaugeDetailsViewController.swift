@@ -35,10 +35,6 @@ class LeaugeDetailsViewController: UIViewController, LeaugeDetailsView {
     }
     
     
-    func showAlert(message: String, completion: ((UIAlertAction) -> Void)?) {
-        self.alert(message: message, actions: [("OK", .cancel, completion)])
-    }
-    
     func dismiss() {
         self.dismiss(animated: true, completion: nil)
     }

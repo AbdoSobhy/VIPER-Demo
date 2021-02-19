@@ -24,6 +24,12 @@ class LeaugeDetailsRouterImpl: LeaugeDetailsRouter {
         return viewController
     }
     
+    func showAlert(from view: LeaugeDetailsView?, message: String, completion: ((UIAlertAction) -> Void)?) {
+        if let view = view as? UIViewController {
+        view.alert(message: message, actions: [("OK", .cancel, completion)])
+        }
+    }
+    
     static var storyboard: UIStoryboard {
        return UIStoryboard(name: "LeaugeDetails", bundle: nil)
     }

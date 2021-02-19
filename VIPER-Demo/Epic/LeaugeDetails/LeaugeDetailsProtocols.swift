@@ -11,7 +11,6 @@ import UIKit
 protocol LeaugeDetailsView: AnyObject {
     var presenter: LeaugeDetailsPresenter? { get set }
     func displayLeaugeData(viewModel: LeagueDetailsViewModel)
-    func showAlert(message: String, completion: ((UIAlertAction) -> Void)?)
     func startAnimating()
     func stopAnimating()
     func dismiss()
@@ -37,6 +36,8 @@ protocol LeaugeDetailsInputInteractor {
 protocol LeaugeDetailsRouter {
     static func createLeaugeDetailsModule(id: String) -> UIViewController
     static var storyboard: UIStoryboard {get}
+    func showAlert(from view: LeaugeDetailsView?, message: String, completion: ((UIAlertAction) -> Void)?)
+
 }
 
 
