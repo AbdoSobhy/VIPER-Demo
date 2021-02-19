@@ -39,7 +39,7 @@ class LeaugePresenterImpl: LeaugePresenter, LeaugeInteractorOutput {
     func getLeaugeFailure(error: ErrorHandler) {
         self.view?.stopAnimating()
         // handle error
-        self.view?.showAlert(message: error.errorObject.message)
+        router.showAlert(from: view, message: error.errorObject.message)
     }
     
     func confugerCell(cell: LeaugeCell, indexPath: IndexPath) {

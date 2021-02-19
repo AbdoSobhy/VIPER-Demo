@@ -32,10 +32,6 @@ class LeaugeViewController: UIViewController, LeaugeView {
         self.leaugeTableView.reloadData()
     }
     
-    func showAlert(message: String) {
-        self.alert(message: message, actions: [("OK", .cancel)])
-    }
-
 }
 
 extension LeaugeViewController: UITableViewDataSource, UITableViewDelegate {

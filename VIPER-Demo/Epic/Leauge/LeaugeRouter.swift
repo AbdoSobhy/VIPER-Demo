@@ -29,6 +29,12 @@ class LeaugeRouterImpl: LeaugeRouter {
         return UIStoryboard(name: "Leauge", bundle: nil)
     }
     
+    func showAlert(from view: LeaugeView?, message: String) {
+        if let view = view as? UIViewController {
+            view.alert(message: message, actions: [("OK", .cancel)])
+        }
+    }
+    
     func navigateToDetailsScreen(from view: LeaugeView?, id: String){
         let leagueDetailsViewController = LeaugeDetailsRouterImpl.createLeaugeDetailsModule(id: id)
         if let viewController = view as? UIViewController {

@@ -10,7 +10,6 @@ import Foundation
 
 protocol LeaugeView: AnyObject {
     var presenter: LeaugePresenter? { get set }
-    func showAlert(message: String)
     func startAnimating()
     func stopAnimating()
     func reloadData()
@@ -41,6 +40,7 @@ protocol LeaugeInteractorOutput {
 
 protocol LeaugeRouter {
     func navigateToDetailsScreen(from view: LeaugeView?, id: String)
+    func showAlert(from view: LeaugeView?, message: String)
 }
 
 
